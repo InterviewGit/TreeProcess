@@ -1,0 +1,27 @@
+{
+  "name": "appl",
+  "version": "1.0.0",
+  "description": "for processing tree height",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winfredjamesjebasingh/TreeProcess.git"
+  },
+  "keywords": [
+    "tree",
+    "height"
+  ],
+  "author": "winfred",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/winfredjamesjebasingh/TreeProcess/issues"
+  },
+  "homepage": "https://github.com/winfredjamesjebasingh/TreeProcess#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.4.6"
+  }
+}
