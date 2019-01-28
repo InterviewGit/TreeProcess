@@ -6,7 +6,7 @@
 2. Go to the project folder and run `docker-compose up --build`
 3. localhost:3000 is the webpage to view.
 4. In case of any issue, run `docker-compose down` followed by `docker-compose up --build`
-5. Sample username: `winfredjames@hotmail.com` password:`jj`
+5. Sample username: `interview@apple.com` password:`verystrong`
 
 ### Run Test case:
 
