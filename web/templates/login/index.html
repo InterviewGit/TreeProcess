@@ -1,25 +1,37 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700|Space+Mono:400,400i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="/login/style.css">
 </head>
 <body>
-	<div class="main">
-		<div class="signin">
-			<h3>Login</h3>
-			
-			<div class="signin__form">
-				<form action="/" method="post">
-					<input type="text" name="logemail" placeholder="E-mail" required="">
-					<input type="password" name="logpassword" placeholder="Password" required="">
-					<div class="tp">
-						<input type="submit" value="LOGIN NOW">
-					</div>
+	<section id="wrapper">
+		    <div id="one">
+				<form action="/signup" method="post"> 		  
+					<label for="email">Email</label>
+					<p><input type="email" id="email" name="email" placeholder="Enter valid email" autocomplete="off" /></p>
+					<label for="fName">Full name</label>
+					<p><input type="text" id="fName" name="username" autocomplete="off" /></p>
+					<label for="password">Password</label>
+					<p><input type="password" id="password" name="password" placeholder="put a strong one" /></p>
+					<label for="confPassword">Confirm Password</label>
+					<p><input type="password" id="confPassword" name="passwordConf" placeholder="Confirm Password" /></p>
+					<p class="submit"><input type="submit" value="REGISTER" /></p>
 				</form>
 			</div>
-		</div>
-	</div>
+			<div id="two">
+				<form action="/" method="post">
+					<label for="emailIn">Email</label>
+					<p><input type="email" id="emailIn" name="logemail" placeholder="Enter valid email" autocomplete="off" /></p>
+					<label for="passwordIn">Password</label>
+					<p><input type="password" id="passwordIn" name="logpassword" placeholder="Enter valid password" /></p>
+					<p class="submit"><input type="submit" value="Sign In" /></p>
+				</form>
+			</div>
+			<div id="button">Sign In </div>
+	</section>
+	<script src="/login/script.js"></script>
 </body>
 </html>

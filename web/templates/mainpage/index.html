@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>BinaryTree</title>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/login/style.css">
+</head>
+<body>
+  <header>
+      <label>Welcome to Max-Tree Sum Service</label>
+      <form action="/logout"><p class="submit"><input type="submit" value="Logout" /></p></form>
+  </header>
+	<div class="main">
+		<div class="btree">
+      <label class="btree__heading">Enter Binary Tree as Preorder String</label>
+      <label>Sample Input: 1,2,null,5,1,null,null,null,3,6,null,null,7,null,null </label>
+			<input type="text" name="preorder" id="preorderValue" placeholder="Copy paste sample input" required="" />
+      <button id = "button" onclick="process()">Get Max Height</button>
+      <div id="answer"></div>
+		</div>
+  </div>
+  <script>
+      function process() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("answer").innerHTML = "";
+            var that = this;
+            if(that.responseText == 'Invalid input') {
+              document.getElementById("answer").style.fontSize = "50px";
+            } else {
+              document.getElementById("answer").style.fontSize = "173px";
+            }
+            setTimeout(function() {document.getElementById("answer").innerHTML =
+            that.responseText},1000);
+          }
+        };
+        var input = document.getElementById("preorderValue").value;
+        xhttp.open("POST", "/process", true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send(input);
+    }
+  </script>        
+</body>
+</html>
