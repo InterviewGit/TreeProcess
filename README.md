@@ -51,6 +51,7 @@
     </tr>
   </tbody>
 </table>
+
   3. Since the table values are stored in preorder manner, the algorithm works by scanning/loading in batch from top to bottom from database(DISK). 
   4. The coded algorithm from this project is run over the `batch-of-data` and following values are collected in `height` and `sum` column respectively.
 Algorithm continues with the next batch. Since we are storing height and sum for all nodes, this helps in finding the next node height and sum from prev batch. This memoization helps us to seperate the data into chunks and run independently. This help us scale our project for bigger input.
